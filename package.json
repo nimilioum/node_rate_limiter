@@ -1,98 +1,43 @@
 {
-  
   "name": "task-redis",
-  
   "version": "0.0.0",
-  
   "private": true,
-  
   "scripts": {
-  "clean": "rimraf dist/*",
-  "copy-assets": "ts-node tools/copyAssets",
-  "tsc": "tsc",
-  "build": "npm-run-all clean tsc copy-assets",
-
-  "start": "node .",
-  "dev-serve": "nodemon .",
-  "serve": "npm-run-all build dev-serve"
+    "clean": "rimraf dist/*",
+    "copy-assets": "ts-node tools/copyAssets",
+    "tsc": "tsc",
+    "build": "npm-run-all clean tsc copy-assets",
+    "start": "node .",
+    "dev-serve": "nodemon .",
+    "serve": "npm-run-all build dev-serve"
   },
-  
   "dependencies": {
-  
-    
-  "cookie-parser": "~1.4.4",
-  
-    
-  "debug": "~2.6.9",
-  
-    
-  "dotenv": "^10.0.0",
-  
-    
-  "express": "~4.16.1",
-  
-    
-  "http-errors": "~1.6.3",
-  
-    
-  "jade": "~1.11.0",
-  
-    
-  "mongoose": "^6.0.7",
-  
-    
-  "morgan": "~1.9.1",
-  
-    
-  "redis": "^3.1.2"
-  
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "mongoose": "^6.0.7",
+    "morgan": "~1.9.1",
+    "redis": "^3.1.2"
   },
-  
   "main": "build/app.js",
-  
   "author": "",
-  
   "license": "ISC",
-  
   "description": "",
-  
   "devDependencies": {
-  
-    
-  "@types/cookie-parser": "^1.4.2",
-  
-    
-  "@types/express": "^4.17.13",
-  
-    
-  "@types/http-errors": "^1.8.1",
-  
-    
-  "@types/mongoose": "^5.11.97",
-  
-    
-  "@types/morgan": "^1.9.3",
-  
-    
-  "@types/redis": "^2.8.32",
-  
-    
-  "@types/shelljs": "^0.8.9",
-  
-    
-  "npm-run-all": "^4.1.5",
-  
-    
-  "rimraf": "^3.0.2",
-  
-    
-  "shelljs": "^0.8.4",
-  
-    
-  "ts-node": "^10.2.1",
-  
-    
-  "typescript": "^4.4.3"
-  
+    "@types/cookie-parser": "^1.4.2",
+    "@types/express": "^4.17.13",
+    "@types/http-errors": "^1.8.1",
+    "@types/mongoose": "^5.11.97",
+    "@types/morgan": "^1.9.3",
+    "@types/redis": "^2.8.32",
+    "@types/shelljs": "^0.8.9",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "shelljs": "^0.8.4",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
   }
 }

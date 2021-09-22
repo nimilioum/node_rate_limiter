@@ -4,7 +4,7 @@ import { model, Schema, Model, Document, ObjectId } from 'mongoose';
 export const BlogSchema: Schema = new Schema({
     name: String,
     author: String,
-    created: {type:Date, default:Date.now()},
+    created: { type: Date, default: Date.now() },
 });
 
 export interface BlogInterface extends Document {

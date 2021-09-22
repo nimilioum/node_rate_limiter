@@ -6,7 +6,7 @@ import { list, create, detail, deleteOne, update } from '../controllers/blogCont
 
 /* GET home page. */
 router.get('/', list);
-router.post('/',rateLimit(5, 30), create);
+router.post('/', rateLimit(5, 30), create);
 router.get('/:id', detail);
 router.delete('/:id', deleteOne);
 router.put('/:id', rateLimit(5, 30), update);
