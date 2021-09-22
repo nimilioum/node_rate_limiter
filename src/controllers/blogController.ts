@@ -29,10 +29,13 @@ export async function update(req: Request, res: Response) {
     try {
         const blog = await Blog.findOne({ _id: req.params.id });
         if (blog === null) { res.status(404).send('blog not found'); }
-        blog!.name = req.body.name || blog!.name;
-        blog!.author = req.body.author || blog!.author;
-        blog!.save();
-        res.send(blog);
+        else {
+            blog.name = req.body.name || blog.name;
+            blog.author = req.body.author || blog.author;
+            blog.save();
+            res.send(blog);
+        }
+
     } catch (error) {
         res.status(503).send('blog update failed');
     }
